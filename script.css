@@ -1,4 +1,136 @@
 body{
     display: flex;
     flex-direction: column;
+    padding:0;
+    margin:0;
+}
+h1,h2,h3,h4,p{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.header-top>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    padding: 0;
+    margin:0;
+}
+.header-top a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+.header-bottom img{
+    max-width: 250px;
+}
+.header-bottom p{
+    width: 400px;
+}
+
+button:hover{
+    background-color: #285db3;
+}
+button:active{
+    background-color: #1a3c72;
+}
+.section-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.section-1-images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    gap:36px;
+}
+.section-1-img{
+    width: 200px;
+    border: solid 4px #3882F6;
+    border-radius: 25px;
+}
+.section-1-images-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-2{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px;
+}
+.section-2-quote{
+    width: 700px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: lighter;
+}
+.section-2-origin{
+    margin-top: 30px;
+    font-family: 'Open Sans';
+    font-style: bold;
+    font-weight: bolder;
+}
+.section-3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+.section-3-container{
+    display: flex;
+    background-color: #3882F6;
+    color: white;
+    justify-content: space-around;
+    padding: 25px 100px;
+    border-radius: 20px;
+}
+.section-3-container-text{
+    margin-right: 100px;
+}
+
+button{
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: solid 0px #3882F6;
+    box-shadow: #1F2937 5px 5px 10px;
+}
+.footer{
+    color: white;
+    background-color: #1f1f1f;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    padding: 17px;
 }
