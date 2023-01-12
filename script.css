@@ -58,12 +58,14 @@ button:active{
     align-items: center;
     flex-direction: column;
     padding: 15px;
+    
 }
 .section-1-images{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 15px;
     gap:36px;
 }
@@ -71,11 +73,13 @@ button:active{
     width: 200px;
     border: solid 4px #3882F6;
     border-radius: 25px;
+    
 }
 .section-1-images-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .section-2{
     background-color: #E5E7EB;
@@ -133,4 +137,60 @@ button{
     align-items: center;
     flex-direction: column;
     padding: 17px;
+}
+
+
+/* an attempt to make this shit responsive */
+@media screen and (max-width: 720px) {
+    .header-bottom{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-bottom>div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .header-bottom p{
+        width: auto;
+    }
+    .section-1-images{
+        flex-wrap: wrap;
+    }
+    .section-1-img{
+        width: 180px;
+        gap:18px;
+    }
+    .section-2{
+        overflow-wrap: break-word;
+        word-break: break-all;
+        flex:1;
+    }
+    .section-2-quote{
+        max-width: 500px;
+        min-width: none;
+        width: auto;
+        
+    }
+    .section-3-container{
+        padding: 25px 50px;
+        flex-direction: column;
+        
+    }
+    .section-3-container-text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .section-3-container-text h3{
+        margin: 0px 0px;
+    }
+
 }
