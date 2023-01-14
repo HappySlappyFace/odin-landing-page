@@ -52,12 +52,7 @@ h1,h2,h3,h4,p{
     margin-top: 0;
 }
 
-button:hover{
-    background-color: #285db3;
-}
-button:active{
-    background-color: #1a3c72;
-}
+
 .section-1{
     display: flex;
     justify-content: space-around;
@@ -134,6 +129,23 @@ button{
     text-decoration: none;
     border: solid 0px #3882F6;
     box-shadow: #1F2937 5px 5px 10px;
+}
+button:hover{
+    background-color: #285db3;
+}
+button:active{
+    background-color: #1a3c72;
+}
+.section-3-container-button{
+    background-color: #cce0ff;
+    color: black;
+
+}
+.section-3-container-button:hover{
+    background-color: #adceff;
+}
+.section-3-container-button:active{
+    background-color: #8fbcff;
 }
 .footer{
     color: white;
